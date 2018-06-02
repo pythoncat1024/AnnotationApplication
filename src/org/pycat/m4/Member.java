@@ -12,7 +12,8 @@ public class Member {
     String firstName;
     @SQLString(value = 50)
     String lastName; // 和 @SQLString(50) 一样的
-    @SQLInteger
+    //    @SQLString(88)
+    @SQLInteger(name = "年龄")
     Integer age;
 
     @SQLString(
